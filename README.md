@@ -49,3 +49,9 @@ The code works, but only just. It has quality, style and security problems of th
 **Target:** aim for a Pylint score above 9.5 on your final file. A perfect 10.00/10 is very good.
 
 Be ready to explain the bugs you found and how you fixed them. You may be called on to present.
+## Security Improvements
+
+- Replaced unsafe `eval()` usage with a numeric discount calculation.
+- Removed the hard-coded API secret and read it from an environment variable.
+- Replaced `os.system()` with a normal Python print statement.
+- Used SHA-256 for member ID digests and `secrets` for locker PIN generation.
